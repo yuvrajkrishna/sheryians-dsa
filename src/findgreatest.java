@@ -3,7 +3,12 @@ import java.util.Arrays;
 public class findgreatest {
     static void main() {
         int arr [] = {1,2,3,5,3,4};
-        Arrays.sort(arr);
-        System.out.println(arr[arr.length-1]);
+        int max = arr[0];
+        for(int i = 1;  i < arr.length; i++){
+            if(arr[i] > max){
+                max = arr[i];
+            }
+        }
+        System.out.println("max = " + max);
     }
 }
