@@ -7,7 +7,7 @@ public class recursion3 {
         if(idx == arr.length){
             return;
         }
-        System.out.println(arr[idx]);
         prt(arr,idx+1);
+        System.out.println(arr[idx]);
     }
 }
